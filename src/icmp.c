@@ -41,7 +41,9 @@
 #if (TARGET==TARGET_LINUX)
 # include <netinet/ip.h>
 # include <linux/types.h>
+#ifndef _LINUX_ICMP_H
 # include <linux/icmp.h>
+#endif
 #elif (TARGET==TARGET_BSD)
 # include <netinet/in_systm.h>
 # include <netinet/ip.h>
